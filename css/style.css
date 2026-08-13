@@ -152,6 +152,11 @@ img { max-width: 100%; display: block; }
 }
 
 .hero-sub { color: var(--text-2); font-size: 1.15rem; margin-top: 6px; }
+
+.hero-sub-en {
+  display: inline-block; margin-top: 4px;
+  font-size: .92rem; color: var(--text-3); font-weight: 500;
+}
 .hero-tag { margin-top: 18px; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
 .hero-actions { margin-top: 28px; display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
 
