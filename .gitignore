@@ -1,5 +1,8 @@
-# 本地文献参考资料（仅作学习参考，不上传到 GitHub 站点）
+# 本地文件（仅作个人使用，不上传到 GitHub 站点）
 study-foundation/
+操作指南.md
+deploy.bat
+诊断推送.bat
 
 # 系统文件
 .DS_Store
