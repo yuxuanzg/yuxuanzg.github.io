@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>凝聚态物理学习笔记：从能带到拓扑 · zgyx</title>
+  <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg" />
+  <link rel="stylesheet" href="../../css/style.css" />
+</head>
+<body data-page="blog">
+
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a class="brand" href="../../index.html">
+        <span class="brand-dot"></span>zgyx<span class="brand-sub">· 学术主页</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="../../index.html#home" class="nav-link">首页</a>
+        <a href="../../index.html#about" class="nav-link">关于</a>
+        <a href="../../index.html#research" class="nav-link">研究</a>
+        <a href="../../index.html#education" class="nav-link">教育</a>
+        <a href="../../projects.html" class="nav-link">项目</a>
+        <a href="../index.html" class="nav-link">博客</a>
+        <a href="../../index.html#contact" class="nav-link">联系</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="打开菜单">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero article-hero">
+      <div class="hero-bg" aria-hidden="true">
+        <span class="blob blob-1"></span>
+        <span class="blob blob-2"></span>
+      </div>
+      <div class="container hero-inner">
+        <p class="section-overline">Blog · 示例笔记</p>
+        <h1 class="article-title">凝聚态物理学习笔记：从能带到拓扑</h1>
+        <p class="article-meta">zgyx · 发布于 2025-01-15 · <em>示例文章</em></p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:24px;">
+      <div class="container">
+        <article class="article-body prose">
+          <div class="note-box">
+            📌 本文为站点示例笔记，公式以纯文本形式书写，正文内容请在
+            <code>blog/posts/condensed-matter-notes.html</code> 中编辑。
+          </div>
+
+          <h2>紧束缚模型：从能带说起</h2>
+          <p>在一维紧束缚近似下，电子能带可以写为：</p>
+          <p><code>E(k) = -2t cos(ka)</code></p>
+          <p>其中 <code>t</code> 是最近邻跃迁积分，<code>a</code> 为晶格常数，<code>k</code> 为波矢。
+             能带结构是理解晶体电子性质的基础。</p>
+
+          <h2>如何判定拓扑性质</h2>
+          <p>对二维绝缘体，可以计算 Berry 曲率在全 Brillouin 区的积分——Chern 数：</p>
+          <p><code>C = (1 / 2π) ∫∫ F(k) dk</code></p>
+          <p>当 <code>C ≠ 0</code> 时，体系具有非平庸拓扑，边界上会出现受保护的边缘态，这与体态拓扑性质由
+             bulk-boundary correspondence 联系起来。</p>
+
+          <blockquote>
+            学习建议：先用一维模型动手画出能带，再逐步引入 Berry 相与拓扑不变量，理解会更扎实。
+          </blockquote>
+
+          <h2>参考资料</h2>
+          <ul>
+            <li>《固体物理》教材：能带理论章节</li>
+            <li>Bernevig &amp; Hughes, <em>Topological Insulators and Topological Superconductors</em></li>
+            <li>Asboth, Oroszlany &amp; Palyi, <em>A Short Course on Topological Insulators</em>（免费讲义）</li>
+          </ul>
+
+          <p style="margin-top:36px;">
+            <a class="btn btn-outline" href="../index.html">← 返回博客列表</a>
+            <a class="btn btn-primary" href="../../index.html">回到首页</a>
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> zgyx · 清华大学物理系</p>
+      <p><a href="https://github.com/yuxuanzg" target="_blank" rel="noopener">yuxuanzg.github.io</a></p>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="回到顶部">↑</button>
+
+  <script src="../../js/main.js"></script>
+</body>
+</html>
