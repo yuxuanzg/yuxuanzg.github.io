@@ -3,6 +3,8 @@ study-foundation/
 操作指南.md
 deploy.bat
 诊断推送.bat
+网络诊断.bat
+配置SSH.bat
 
 # 系统文件
 .DS_Store
