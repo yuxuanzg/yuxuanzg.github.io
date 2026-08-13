@@ -78,7 +78,11 @@ yuxuanzg.github.io
 
 ### 5.2 本地初始化并推送
 
-在项目根目录执行：
+> 本机 Git 安装在 `C:\Program Files\Git\bin\git.exe`（不在 PATH 中），
+> 因此**最简单的做法是双击项目根目录下的 `deploy.bat`**，它会自动完成远程仓库配置与推送。
+
+也可以手动执行（命令行中 `git` 请换成完整路径
+`"C:\Program Files\Git\bin\git.exe"`）：
 
 ```bash
 git init
@@ -88,6 +92,8 @@ git branch -M main
 git remote add origin https://github.com/yuxuanzg/yuxuanzg.github.io.git
 git push -u origin main
 ```
+
+> 首次推送会弹出 GitHub 登录窗口（或要求输入用户名 + Personal Access Token）。
 
 ### 5.3 启用 GitHub Pages
 
