@@ -1,6 +1,6 @@
 @echo off
 REM ============================================================
-REM  One-click deploy for zgyx academic homepage
+REM  One-click deploy for 诸葛宇轩 academic homepage
 REM  Before running: create repo named "yuxuanzg.github.io" on
 REM  GitHub (Public). Then double-click this file.
 REM ============================================================

@@ -1,6 +1,6 @@
-# zgyx 学术主页
+# 诸葛宇轩 学术主页
 
-清华大学物理系本科生 · 凝聚态物理理论方向 · 基于 GitHub Pages 的纯静态学术主页。
+清华大学物理系本科生 · 研究方向：非厄米物理、量子开放系统与拓扑物态 · 基于 GitHub Pages 的纯静态学术主页。
 
 ## 一、整体流程（概览）
 
@@ -27,12 +27,13 @@ webpage/
 │   ├── index.html          # 博客列表页
 │   └── posts/              # 文章目录（每篇一个 html）
 │       ├── hello-world.html
-│       └── condensed-matter-notes.html
+│       └── non-hermitian-notes.html
 ├── css/style.css           # 全部样式（彩色现代风）
 ├── js/main.js              # 交互（导航高亮 / 滚动动画 / 回到顶部）
 ├── assets/
-│   ├── avatar.svg          # 头像占位图（替换为你的照片即可）
+│   ├── avatar.svg          # 卡通狐狸头像（可替换为你的照片）
 │   └── favicon.svg         # 站点图标
+├── study-foundation/       # 本地文献参考（.gitignore 排除，不随站点发布）
 └── README.md
 ```
 

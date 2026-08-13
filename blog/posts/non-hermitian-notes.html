@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>非厄米物理学习笔记：从例外点到非布洛赫能带 · 诸葛宇轩</title>
+  <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg" />
+  <link rel="stylesheet" href="../../css/style.css" />
+</head>
+<body data-page="blog">
+
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a class="brand" href="../../index.html">
+        <span class="brand-dot"></span>诸葛宇轩<span class="brand-sub">· 学术主页</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="../../index.html#home" class="nav-link">首页</a>
+        <a href="../../index.html#about" class="nav-link">关于</a>
+        <a href="../../index.html#research" class="nav-link">研究</a>
+        <a href="../../index.html#education" class="nav-link">教育</a>
+        <a href="../../projects.html" class="nav-link">项目</a>
+        <a href="../index.html" class="nav-link">博客</a>
+        <a href="../../index.html#contact" class="nav-link">联系</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="打开菜单">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero article-hero">
+      <div class="hero-bg" aria-hidden="true">
+        <span class="blob blob-1"></span>
+        <span class="blob blob-2"></span>
+      </div>
+      <div class="container hero-inner">
+        <p class="section-overline">Blog · 学习笔记</p>
+        <h1 class="article-title">非厄米物理学习笔记：从例外点到非布洛赫能带</h1>
+        <p class="article-meta">诸葛宇轩 · 发布于 2025-01-15 · <em>示例笔记</em></p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:24px;">
+      <div class="container">
+        <article class="article-body prose">
+          <div class="note-box">
+            📌 本文为站点示例笔记，正文请在 <code>blog/posts/non-hermitian-notes.html</code> 中编辑。
+            笔记内容基于本地 <code>study-foundation/</code> 文件夹中的文献整理。
+          </div>
+
+          <h2>为什么研究非厄米系统</h2>
+          <p>真实的物理系统几乎总是与外界环境耦合：耗散、增益与驱动无处不在。将系统与环境的相互作用有效纳入描述，就得到
+             非厄米哈密顿量或开放量子系统的演化方程。近年来的研究表明，非厄米体系拥有厄米体系所没有的新奇现象，
+             比如例外点（exceptional points）与谱奇异。</p>
+
+          <h2>例外点与谱奇异</h2>
+          <p>非厄米算符的本征值与本征矢不必解析地依赖参数：在参数空间的某些点，多个本征值与对应本征矢同时合并，
+             这些点称为例外点（EP）。在 EP 附近，能级呈现平方根标度的劈裂，这与厄米体系中的能级避免交叉截然不同。</p>
+
+          <h2>非布洛赫能带理论与广义布里渊区</h2>
+          <p>在开边界条件下，非厄米体系的体态并不由标准的布洛赫能带完全刻画，需要考虑广义布里渊区（GBZ）与
+             非布洛赫能带理论，由此可以恢复非厄米体系的体-边对应关系。</p>
+
+          <h2>开放量子系统：Lindblad 方程</h2>
+          <p>当关注系统约化密度矩阵的演化时，在马尔可夫近似下可以得到 Lindblad 主方程。它对于理解耗散如何影响
+             量子相干乃至拓扑性质至关重要。</p>
+
+          <h2>参考资料</h2>
+          <p>以下文献正在阅读中（全文见本地 <code>study-foundation/</code> 文件夹）：</p>
+          <ul>
+            <li><em>Non-Hermitian physics</em>（综述）</li>
+            <li><em>Exceptional topology of non-Hermitian systems</em></li>
+            <li><em>Non-Bloch Band Theory of Non-Hermitian Systems</em></li>
+            <li>《广义布里渊区与非厄米能带》（中文综述）</li>
+            <li><em>A short introduction to the Lindblad master equation</em></li>
+            <li><em>Keldysh field theory for driven open quantum systems</em></li>
+          </ul>
+
+          <p style="margin-top:36px;">
+            <a class="btn btn-outline" href="../index.html">← 返回博客列表</a>
+            <a class="btn btn-primary" href="../../index.html#research">查看研究方向 →</a>
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> 诸葛宇轩 · 清华大学物理系</p>
+      <p><a href="https://github.com/yuxuanzg" target="_blank" rel="noopener">yuxuanzg.github.io</a></p>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="回到顶部">↑</button>
+
+  <script src="../../js/main.js"></script>
+</body>
+</html>
