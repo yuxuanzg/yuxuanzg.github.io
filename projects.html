@@ -16,14 +16,15 @@
         <span class="brand-dot"></span>诸葛宇轩<span class="brand-sub">· 学术主页</span>
       </a>
       <nav class="nav-links" id="navLinks">
-        <a href="index.html#home" class="nav-link">首页</a>
-        <a href="index.html#about" class="nav-link">关于</a>
-        <a href="index.html#research" class="nav-link">研究</a>
-        <a href="index.html#education" class="nav-link">教育</a>
-        <a href="projects.html" class="nav-link">项目</a>
-        <a href="blog/index.html" class="nav-link">博客</a>
-        <a href="index.html#contact" class="nav-link">联系</a>
+        <a href="index.html#home" class="nav-link" data-i18n="nav_home">首页</a>
+        <a href="index.html#about" class="nav-link" data-i18n="nav_about">关于</a>
+        <a href="index.html#research" class="nav-link" data-i18n="nav_research">研究</a>
+        <a href="index.html#education" class="nav-link" data-i18n="nav_education">教育</a>
+        <a href="projects.html" class="nav-link" data-i18n="nav_projects">项目</a>
+        <a href="blog/index.html" class="nav-link" data-i18n="nav_blog">博客</a>
+        <a href="index.html#contact" class="nav-link" data-i18n="nav_contact">联系</a>
       </nav>
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">EN</button>
       <button class="nav-toggle" id="navToggle" aria-label="打开菜单">
         <span></span><span></span><span></span>
       </button>
@@ -38,48 +39,34 @@
         <div class="dot-grid"></div>
       </div>
       <div class="container hero-inner">
-        <h1 class="hero-name">项目经历</h1>
-        <p class="hero-sub">Projects · 科研项目与学习实践</p>
+        <h1 class="hero-name" data-i18n="sec_projects">项目经历</h1>
+        <p class="hero-sub">Projects</p>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
-        <div class="card-grid cols-2">
-          <div class="card project-card reveal">
-            <div class="project-top">
-              <span class="project-badge badge-indigo">进行中</span>
-              <h3>强关联体系的数值模拟</h3>
-            </div>
-            <p>使用精确对角化（ED）等方法研究小尺寸格点模型（如 Hubbard 模型、t-J 模型）中的关联效应与量子相变现象。</p>
-            <div class="project-meta">
-              <span class="chip chip-sm">Python</span>
-              <span class="chip chip-sm">量子多体</span>
-              <span class="chip chip-sm">精确对角化</span>
-            </div>
-          </div>
-
-          <div class="card project-card reveal">
-            <div class="project-top">
-              <h3>摩尔超晶格计算</h3>
-            </div>
-            <p>关于黑磷等四方晶格材料，计算twisted bilayer的能带结构，构建其连续模型以及紧束缚模型，探索可能存在的新奇性质和材料平台。</p>
-            <div class="project-meta">
-              <span class="chip chip-sm">QE, Siesta</span>
-              <span class="chip chip-sm">凝聚态计算</span>
-            </div>
-          </div>
-
-        </div>
+        <div class="card-grid cols-2" id="projList"></div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container footer-inner">
-      <p>© <span id="year"></span> 诸葛宇轩 · 清华大学物理系</p>
+      <p data-i18n="footer_line"></p>
     </div>
   </footer>
+
+  <!-- 项目详情弹窗 -->
+  <div class="modal-overlay" id="modalOverlay" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true">
+      <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+      <h3 class="modal-title" id="modalTitle"></h3>
+      <p class="modal-status" id="modalStatus"></p>
+      <div class="modal-body" id="modalBody"></div>
+      <div class="modal-tags" id="modalTags"></div>
+    </div>
+  </div>
 
   <button class="back-top" id="backTop" aria-label="回到顶部">↑</button>
 

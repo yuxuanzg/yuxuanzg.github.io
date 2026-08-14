@@ -4,27 +4,27 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>诸葛宇轩 · 学术主页 | 清华大学物理系</title>
-  <meta name="description" content="诸葛宇轩 的个人学术主页 —— 清华大学物理系本科生，研究方向：非厄米物理、量子开放系统与拓扑物态。" />
+  <meta name="description" content="诸葛宇轩的个人学术主页 —— 清华大学物理系本科生，研究方向：非厄米物理、量子开放系统与拓扑物态。" />
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body data-page="home">
 
-  <!-- ======= 顶部导航 ======= -->
   <header class="navbar" id="navbar">
     <div class="container nav-inner">
       <a class="brand" href="index.html">
         <span class="brand-dot"></span>诸葛宇轩<span class="brand-sub">· 学术主页</span>
       </a>
       <nav class="nav-links" id="navLinks">
-        <a href="#home" class="nav-link">首页</a>
-        <a href="#about" class="nav-link">关于</a>
-        <a href="#research" class="nav-link">研究</a>
-        <a href="#education" class="nav-link">教育</a>
-        <a href="#projects" class="nav-link">项目</a>
-        <a href="#blog" class="nav-link">博客</a>
-        <a href="#contact" class="nav-link">联系</a>
+        <a href="#home" class="nav-link" data-i18n="nav_home">首页</a>
+        <a href="#about" class="nav-link" data-i18n="nav_about">关于</a>
+        <a href="#research" class="nav-link" data-i18n="nav_research">研究</a>
+        <a href="#education" class="nav-link" data-i18n="nav_education">教育</a>
+        <a href="#projects" class="nav-link" data-i18n="nav_projects">项目</a>
+        <a href="#blog" class="nav-link" data-i18n="nav_blog">博客</a>
+        <a href="#contact" class="nav-link" data-i18n="nav_contact">联系</a>
       </nav>
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">EN</button>
       <button class="nav-toggle" id="navToggle" aria-label="打开菜单">
         <span></span><span></span><span></span>
       </button>
@@ -45,17 +45,17 @@
           <img class="avatar" src="assets/avatar.svg" alt="诸葛宇轩 的头像" />
           <span class="avatar-ring"></span>
         </div>
-        <h1 class="hero-name reveal">诸葛宇轩</h1>
-        <p class="hero-sub reveal">清华大学 · 物理系本科生<br /><span class="hero-sub-en">Tsinghua University · Undergraduate in Physics</span></p>
+        <h1 class="hero-name reveal" data-i18n="hero_name">诸葛宇轩</h1>
+        <p class="hero-sub reveal" data-i18n="hero_sub">清华大学 · 物理系本科生</p>
         <p class="hero-tag reveal">
-          <span class="chip chip-indigo">非厄米物理</span>
-          <span class="chip chip-cyan">量子开放系统</span>
-          <span class="chip chip-amber">拓扑物态</span>
+          <span class="chip chip-indigo" data-i18n="chip1">非厄米物理</span>
+          <span class="chip chip-cyan" data-i18n="chip2">量子开放系统</span>
+          <span class="chip chip-amber" data-i18n="chip3">拓扑物态</span>
         </p>
         <div class="hero-actions reveal">
-          <a class="btn btn-primary" href="#contact">联系我</a>
-          <a class="btn btn-ghost" href="blog/index.html">阅读笔记 →</a>
-          <a class="btn btn-ghost" href="https://github.com/yuxuanzg" target="_blank" rel="noopener">GitHub ↗</a>
+          <a class="btn btn-primary" href="#contact" data-i18n="hero_cta_contact">联系我</a>
+          <a class="btn btn-ghost" href="blog/index.html" data-i18n="hero_cta_notes">阅读笔记 →</a>
+          <a class="btn btn-ghost" href="https://github.com/yuxuanzg" target="_blank" rel="noopener" data-i18n="hero_cta_github">GitHub ↗</a>
         </div>
       </div>
     </section>
@@ -65,28 +65,22 @@
       <div class="container">
         <div class="section-head reveal">
           <span class="section-overline">About</span>
-          <h2 class="section-title">关于我</h2>
+          <h2 class="section-title" data-i18n="sec_about">关于我</h2>
         </div>
         <div class="about-grid">
           <div class="card about-card reveal">
-            <p class="about-text">
-              你好！我是 <strong>诸葛宇轩</strong>，清华大学物理系本科生。我最近加入了
-              研究 <strong>非厄米物理与量子开放系统</strong> 的课题组，重点关注其中与
-              <strong>拓扑物态</strong> 相关的问题，如非布洛赫能带理论以及开放系统中的拓扑性质。
-            </p>
-            <p class="about-text">
-              本页面用于整理与展示我的学习笔记、科研项目与经历。欢迎通过下方联系方式与我交流讨论。
-            </p>
+            <p class="about-text" data-i18n="about_p1"></p>
+            <p class="about-text" data-i18n="about_p2"></p>
           </div>
           <div class="card info-card reveal">
-            <h3 class="info-title">基本信息</h3>
+            <h3 class="info-title" data-i18n="sec_about">关于我</h3>
             <ul class="info-list">
-              <li><span class="info-key">姓名</span><span>诸葛宇轩</span></li>
-              <li><span class="info-key">单位</span><span>清华大学 · 物理系</span></li>
-              <li><span class="info-key">身份</span><span>本科生</span></li>
-              <li><span class="info-key">方向</span><span>非厄米物理 · 量子开放系统</span></li>
-              <li><span class="info-key">邮箱</span><a href="mailto:zgyx24@mails.tsinghua.edu.cn">zgyx24@mails.tsinghua.edu.cn</a></li>
-              <li><span class="info-key">GitHub</span><a href="https://github.com/yuxuanzg" target="_blank" rel="noopener">github.com/yuxuanzg</a></li>
+              <li><span class="info-key" data-i18n="info_name">姓名</span><span data-i18n="val_name">诸葛宇轩</span></li>
+              <li><span class="info-key" data-i18n="info_unit">单位</span><span data-i18n="val_unit">清华大学 · 物理系</span></li>
+              <li><span class="info-key" data-i18n="info_role">身份</span><span data-i18n="val_role">本科生</span></li>
+              <li><span class="info-key" data-i18n="info_field">方向</span><span data-i18n="val_field">非厄米物理 · 量子开放系统</span></li>
+              <li><span class="info-key" data-i18n="info_email">邮箱</span><a href="mailto:zgyx24@mails.tsinghua.edu.cn">zgyx24@mails.tsinghua.edu.cn</a></li>
+              <li><span class="info-key" data-i18n="info_github">GitHub</span><a href="https://github.com/yuxuanzg" target="_blank" rel="noopener">github.com/yuxuanzg</a></li>
             </ul>
           </div>
         </div>
@@ -98,23 +92,23 @@
       <div class="container">
         <div class="section-head reveal">
           <span class="section-overline">Research</span>
-          <h2 class="section-title">研究方向</h2>
+          <h2 class="section-title" data-i18n="sec_research">研究方向</h2>
         </div>
         <div class="card-grid cols-3">
           <div class="card topic-card reveal">
             <div class="topic-icon icon-indigo">◈</div>
-            <h3>非厄米物理</h3>
-            <p>研究例外点、非布洛赫能带理论与体-边对应的修正等非厄米体系特有的现象。</p>
+            <h3 data-i18n="topic1">非厄米物理</h3>
+            <p data-i18n="topic1d"></p>
           </div>
           <div class="card topic-card reveal">
             <div class="topic-icon icon-cyan">◉</div>
-            <h3>量子开放系统</h3>
-            <p>关注耗散与驱动下开放量子系统的动力学，涉及 Lindblad 主方程与 Keldysh 场论等方法。</p>
+            <h3 data-i18n="topic2">量子开放系统</h3>
+            <p data-i18n="topic2d"></p>
           </div>
           <div class="card topic-card reveal">
             <div class="topic-icon icon-amber">✦</div>
-            <h3>拓扑物态</h3>
-            <p>从厄米拓扑不变量出发，理解非厄米体系中拓扑相、边界态与例外点拓扑。</p>
+            <h3 data-i18n="topic3">拓扑物态</h3>
+            <p data-i18n="topic3d"></p>
           </div>
         </div>
       </div>
@@ -125,78 +119,47 @@
       <div class="container">
         <div class="section-head reveal">
           <span class="section-overline">Education</span>
-          <h2 class="section-title">教育经历</h2>
+          <h2 class="section-title" data-i18n="sec_education">教育经历</h2>
         </div>
         <div class="timeline reveal">
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="card timeline-card">
               <div class="timeline-head">
-                <h3>清华大学 · 物理系</h3>
-                <span class="timeline-date">2024.09 — 至今</span>
+                <h3 data-i18n="edu_name">清华大学 · 物理系</h3>
+                <span class="timeline-date" data-i18n="edu_date">2024.09 — 至今</span>
               </div>
-              <p class="timeline-desc">本科（在读），目前在非厄米物理与量子开放系统方向进行科研训练。</p>
+              <p class="timeline-desc" data-i18n="edu_desc"></p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ======= 项目经历 ======= -->
+    <!-- ======= 项目经历（自动抓取前 2 条） ======= -->
     <section id="projects" class="section section-alt">
       <div class="container">
         <div class="section-head reveal">
           <span class="section-overline">Projects</span>
-          <h2 class="section-title">项目经历</h2>
+          <h2 class="section-title" data-i18n="sec_projects">项目经历</h2>
         </div>
-        <div class="card-grid cols-2">
-          <div class="card project-card reveal">
-            <div class="project-top">
-              <span class="project-badge badge-indigo">进行中</span>
-              <h3>强关联体系的数值模拟</h3>
-            </div>
-            <p>使用精确对角化等方法研究小尺寸格点模型中的关联效应与量子相变。</p>
-            <div class="project-meta">
-              <span class="chip chip-sm">Python</span>
-              <span class="chip chip-sm">量子多体</span>
-            </div>
-          </div>
-          <div class="card project-card reveal">
-            <div class="project-top">
-              <h3>摩尔超晶格计算</h3>
-            </div>
-            <p>关于黑磷等四方晶格材料，计算twisted bilayer的能带结构，构建其连续模型以及紧束缚模型，探索可能存在的新奇性质和材料平台。</p>
-            <div class="project-meta">
-              <span class="chip chip-sm">QE, Siesta</span>
-              <span class="chip chip-sm">凝聚态计算</span>
-            </div>
-          </div>
-        </div>
+        <div class="card-grid cols-2" id="projList"></div>
         <div class="center-btn reveal">
-          <a class="btn btn-outline" href="projects.html">查看全部项目 →</a>
+          <a class="btn btn-outline" href="projects.html" data-i18n="proj_more">查看全部项目 →</a>
         </div>
       </div>
     </section>
 
-    <!-- ======= 博客 ======= -->
+    <!-- ======= 博客（自动抓取前 3 条） ======= -->
     <section id="blog" class="section">
       <div class="container">
         <div class="section-head reveal">
           <span class="section-overline">Blog</span>
-          <h2 class="section-title">博客 / 学术笔记</h2>
+          <h2 class="section-title" data-i18n="sec_blog">博客 / 学术笔记</h2>
         </div>
-        <div class="post-list reveal">
-          <a class="post-item" href="blog/posts/non-hermitian-notes.html">
-            <div class="post-date">2025-01-15</div>
-            <div class="post-info">
-              <h3>非厄米物理学习笔记：非布洛赫能带</h3>
-              <p>整理例外点、非布洛赫带理论与开放量子系统的入门笔记……</p>
-            </div>
-            <span class="post-arrow">→</span>
-          </a>
-        </div>
+        <div class="post-list" id="postList"></div>
         <div class="center-btn reveal">
-          <a class="btn btn-outline" href="blog/index.html">全部笔记 →</a>
+          <a class="btn btn-outline" href="blog/index.html" data-i18n="blog_more">全部笔记 →</a>
         </div>
       </div>
     </section>
@@ -206,23 +169,23 @@
       <div class="container">
         <div class="section-head reveal">
           <span class="section-overline">Contact</span>
-          <h2 class="section-title">联系我</h2>
+          <h2 class="section-title" data-i18n="sec_contact">联系我</h2>
         </div>
         <div class="contact-grid reveal">
           <a class="card contact-card" href="mailto:zgyx24@mails.tsinghua.edu.cn">
             <span class="contact-icon icon-indigo">✉</span>
-            <span class="contact-label">邮箱</span>
+            <span class="contact-label" data-i18n="contact_email">邮箱</span>
             <span class="contact-value">zgyx24@mails.tsinghua.edu.cn</span>
           </a>
           <a class="card contact-card" href="https://github.com/yuxuanzg" target="_blank" rel="noopener">
             <span class="contact-icon icon-dark">⌥</span>
-            <span class="contact-label">GitHub</span>
+            <span class="contact-label" data-i18n="contact_github">GitHub</span>
             <span class="contact-value">@yuxuanzg</span>
           </a>
           <div class="card contact-card">
             <span class="contact-icon icon-cyan">⌂</span>
-            <span class="contact-label">地址</span>
-            <span class="contact-value">北京市海淀区 · 清华大学</span>
+            <span class="contact-label" data-i18n="contact_addr">地址</span>
+            <span class="contact-value" data-i18n="val_addr">北京市海淀区 · 清华大学</span>
           </div>
         </div>
       </div>
@@ -231,9 +194,20 @@
 
   <footer class="footer">
     <div class="container footer-inner">
-      <p>© <span id="year"></span> 诸葛宇轩 · 清华大学物理系</p>
+      <p data-i18n="footer_line"></p>
     </div>
   </footer>
+
+  <!-- 项目详情弹窗 -->
+  <div class="modal-overlay" id="modalOverlay" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true">
+      <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+      <h3 class="modal-title" id="modalTitle"></h3>
+      <p class="modal-status" id="modalStatus"></p>
+      <div class="modal-body" id="modalBody"></div>
+      <div class="modal-tags" id="modalTags"></div>
+    </div>
+  </div>
 
   <button class="back-top" id="backTop" aria-label="回到顶部">↑</button>
 

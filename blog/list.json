@@ -1,0 +1,14 @@
+{
+  "posts": [
+    {
+      "id": "non-hermitian-notes",
+      "file": "posts/non-hermitian-notes.md",
+      "date": "2025-01-15",
+      "title_zh": "非厄米物理学习笔记：非布洛赫能带",
+      "title_en": "Notes on Non-Hermitian Physics: Non-Bloch Bands",
+      "intro_zh": "整理非布洛赫带理论、广义布里渊区与开放量子系统的一篇入门笔记。",
+      "intro_en": "An introductory note on non-Bloch band theory, the generalized Brillouin zone, and open quantum systems.",
+      "tags": ["非厄米物理", "量子开放系统", "拓扑物态"]
+    }
+  ]
+}

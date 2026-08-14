@@ -419,3 +419,120 @@ img { max-width: 100%; display: block; }
   html { scroll-behavior: auto; }
   .reveal { opacity: 1; transform: none; }
 }
+
+/* ---------- 语言切换按钮 ---------- */
+.lang-toggle {
+  margin-left: 14px; flex-shrink: 0;
+  padding: 6px 16px; border-radius: 999px;
+  border: 2px solid var(--border); background: #fff;
+  color: var(--text-2); font-weight: 700; font-size: .82rem;
+  cursor: pointer; transition: all .25s;
+}
+.lang-toggle:hover { border-color: var(--primary); color: var(--primary); }
+
+/* ---------- 项目卡片提示与空态 ---------- */
+.proj-more {
+  display: inline-block; margin-top: 12px;
+  font-size: .82rem; font-weight: 600; color: var(--primary);
+}
+.data-empty { color: var(--text-3); text-align: center; padding: 24px 0; }
+
+/* ---------- 项目详情弹窗 ---------- */
+.modal-overlay {
+  position: fixed; inset: 0; z-index: 200;
+  background: rgba(15, 23, 42, .55);
+  backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);
+  display: flex; align-items: center; justify-content: center;
+  opacity: 0; visibility: hidden; transition: all .3s;
+  padding: 20px;
+}
+.modal-overlay.show { opacity: 1; visibility: visible; }
+.modal {
+  position: relative; width: min(720px, 100%); max-height: 82vh; overflow-y: auto;
+  background: #fff; border-radius: 20px; padding: 34px 34px 28px;
+  box-shadow: 0 30px 80px rgba(15, 23, 42, .35);
+  transform: translateY(18px); transition: transform .3s;
+}
+.modal-overlay.show .modal { transform: translateY(0); }
+.modal-close {
+  position: absolute; top: 14px; right: 16px;
+  width: 34px; height: 34px; border-radius: 50%; border: none;
+  background: var(--bg-alt); color: var(--text-2); font-size: 1.2rem;
+  cursor: pointer; transition: all .2s;
+}
+.modal-close:hover { background: var(--rose); color: #fff; }
+.modal-title {
+  font-size: 1.4rem; font-weight: 800; padding-right: 30px;
+  background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.modal-status {
+  display: inline-block; margin: 10px 0 14px;
+  background: var(--bg-alt); color: var(--primary);
+  font-size: .78rem; font-weight: 700; padding: 3px 12px; border-radius: 99px;
+}
+.modal-body { color: var(--text-2); font-size: .98rem; line-height: 1.8; }
+.modal-body ul { margin: 6px 0 14px 20px; }
+.modal-body li { margin-bottom: 6px; }
+.modal-tags { margin-top: 16px; display: flex; gap: 8px; flex-wrap: wrap; }
+
+/* ---------- 文章页 ---------- */
+.article-tags { margin-left: 10px; }
+.article-tags .chip { margin-right: 6px; }
+
+/* ---------- Markdown 排版增强（非白板样式） ---------- */
+.prose h1 {
+  font-size: 1.7rem; color: var(--text); margin: 0 0 20px;
+  padding-bottom: 14px;
+  background: linear-gradient(90deg, var(--primary), var(--cyan)) bottom left / 120px 3px no-repeat;
+}
+.prose h2 {
+  color: var(--text); font-size: 1.35rem; margin: 34px 0 14px;
+  border-left: 4px solid var(--primary);
+  background: linear-gradient(90deg, rgba(99, 102, 241, .08), transparent);
+  border-radius: 0 8px 8px 0; padding: 8px 14px 8px 18px;
+}
+.prose h3 { color: var(--text); margin: 26px 0 10px; font-size: 1.1rem; }
+.prose p { margin-bottom: 16px; }
+.prose ul, .prose ol { margin: 0 0 16px 22px; }
+.prose li { margin-bottom: 6px; }
+.prose strong { color: var(--text); }
+.prose code {
+  background: var(--bg-alt); color: var(--primary);
+  padding: 2px 8px; border-radius: 6px; font-size: .9em;
+  font-family: "Consolas", "Courier New", monospace;
+}
+.prose pre {
+  background: #0f172a; color: #e2e8f0; border-radius: 14px;
+  padding: 18px 20px; overflow-x: auto; margin: 18px 0;
+  box-shadow: var(--shadow);
+}
+.prose pre code { background: none; color: inherit; padding: 0; font-size: .88rem; }
+.prose blockquote {
+  border-left: 4px solid var(--cyan);
+  background: linear-gradient(90deg, #ecfeff, #f0fdff);
+  padding: 14px 20px; border-radius: 0 12px 12px 0; margin: 18px 0;
+  color: var(--text-2); font-style: italic;
+}
+.prose table {
+  width: 100%; border-collapse: collapse; margin: 20px 0; font-size: .92rem;
+  border-radius: 12px; overflow: hidden; box-shadow: var(--shadow);
+}
+.prose th {
+  background: var(--grad); color: #fff; text-align: left;
+  padding: 10px 14px; font-weight: 700;
+}
+.prose td { padding: 9px 14px; border-bottom: 1px solid var(--border); color: var(--text-2); }
+.prose tr:nth-child(even) td { background: var(--bg-alt); }
+.prose img { border-radius: 14px; box-shadow: var(--shadow); margin: 18px auto; }
+.prose hr {
+  border: none; height: 3px; border-radius: 99px;
+  background: linear-gradient(90deg, var(--primary), var(--cyan));
+  margin: 30px auto; width: 120px;
+}
+.prose .katex-display { margin: 20px 0; overflow-x: auto; overflow-y: hidden; padding: 8px 0; }
+
+/* ---------- 响应式补充 ---------- */
+@media (max-width: 860px) {
+  .lang-toggle { margin-left: 8px; }
+  .modal { padding: 26px 20px 22px; }
+}
