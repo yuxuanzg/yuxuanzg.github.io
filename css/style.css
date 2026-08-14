@@ -357,9 +357,9 @@ img { max-width: 100%; display: block; }
 .back-top.show { opacity: 1; visibility: visible; transform: translateY(0); }
 .back-top:hover { transform: translateY(-3px); }
 
-/* ---------- 滚动显示动画 ---------- */
-.reveal { opacity: 0; transform: translateY(26px); transition: opacity .7s ease, transform .7s ease; }
-.reveal.visible { opacity: 1; transform: none; }
+/* ---------- 滚动显示动画（仅 JS 可用时启用，JS 失效则全部可见） ---------- */
+.js .reveal { opacity: 0; transform: translateY(26px); transition: opacity .7s ease, transform .7s ease; }
+.js .reveal.visible { opacity: 1; transform: none; }
 
 /* ---------- 博客文章排版 ---------- */
 .article-hero { padding: 64px 0 32px; text-align: center; }
@@ -417,7 +417,7 @@ img { max-width: 100%; display: block; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
   html { scroll-behavior: auto; }
-  .reveal { opacity: 1; transform: none; }
+  .reveal, .js .reveal { opacity: 1; transform: none; }
 }
 
 /* ---------- 语言切换按钮 ---------- */

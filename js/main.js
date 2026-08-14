@@ -85,7 +85,8 @@
     }
   };
 
-  var currentLang = localStorage.getItem(LANG_KEY) || "zh";
+  var currentLang = "zh";
+  try { currentLang = localStorage.getItem(LANG_KEY) || "zh"; } catch (e) { /* 隐私模式等场景 localStorage 不可用时回退中文 */ }
   if (!I18N[currentLang]) currentLang = "zh";
 
   function t(key) {
@@ -157,7 +158,7 @@
     window.__projects = list.projects;
     container.innerHTML = projects.map(function (p) {
       return (
-        '<div class="card project-card reveal" data-id="' + p.id + '">' +
+        '<div class="card project-card" data-id="' + p.id + '">' +
           '<div class="project-top">' +
             '<span class="project-badge badge-indigo">' + (currentLang === "zh" ? p.status_zh : p.status_en) + "</span>" +
             "<h3>" + (currentLang === "zh" ? p.name_zh : p.name_en) + "</h3>" +
@@ -295,7 +296,7 @@
     if (langToggle) {
       langToggle.addEventListener("click", function () {
         currentLang = currentLang === "zh" ? "en" : "zh";
-        localStorage.setItem(LANG_KEY, currentLang);
+        try { localStorage.setItem(LANG_KEY, currentLang); } catch (e) {}
         applyLang();
       });
     }
