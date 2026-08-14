@@ -2,8 +2,8 @@
   "projects": [
     {
       "id": "moire-superlattice",
-      "status_zh": "进行中",
-      "status_en": "Ongoing",
+      "date": "2025-02-10",
+      "status": "ongoing",
       "name_zh": "摩尔超晶格计算",
       "name_en": "Moiré Superlattice Calculations",
       "desc_zh": "针对黑磷等四方晶格材料，计算 twisted bilayer 的能带结构，构建其连续模型以及紧束缚模型，探索可能存在的新奇性质与材料平台。",
@@ -14,8 +14,8 @@
     },
     {
       "id": "nonhermitian-open-systems",
-      "status_zh": "进行中",
-      "status_en": "Ongoing",
+      "date": "2025-01-20",
+      "status": "ongoing",
       "name_zh": "非厄米与量子开放系统调研",
       "name_en": "Survey on Non-Hermitian and Open Quantum Systems",
       "desc_zh": "系统调研非布洛赫能带理论、例外点与 Lindblad 主方程，整理学习笔记并复现典型模型。",
@@ -26,8 +26,8 @@
     },
     {
       "id": "strong-correlation",
-      "status_zh": "示例",
-      "status_en": "Example",
+      "date": "2024-12-10",
+      "status": "done",
       "name_zh": "强关联体系的数值模拟",
       "name_en": "Numerical Simulation of Strongly Correlated Systems",
       "desc_zh": "使用精确对角化等方法研究小尺寸格点模型中的关联效应与量子相变。",
@@ -38,8 +38,8 @@
     },
     {
       "id": "ug-research",
-      "status_zh": "示例",
-      "status_en": "Example",
+      "date": "2024-11-01",
+      "status": "done",
       "name_zh": "本科生科研训练",
       "name_en": "Undergraduate Research Training",
       "desc_zh": "在导师指导下参与课题调研与文献复现，撰写调研报告。",

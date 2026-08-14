@@ -119,6 +119,14 @@
     if (el) el.innerHTML = '<p class="data-empty">' + t("data_error") + "</p>";
   }
 
+  /* 项目状态：single 字段快速切换（ongoing=进行中, done=已完成） */
+  function statusLabel(p) {
+    var map = currentLang === "zh"
+      ? { ongoing: "进行中", done: "已完成" }
+      : { ongoing: "Ongoing", done: "Completed" };
+    return map[p.status] || p.status || "";
+  }
+
   /* ---------- 博客列表渲染 ---------- */
   function renderPosts(list, containerId, limit) {
     var container = document.getElementById(containerId);
@@ -149,7 +157,11 @@
     var container = document.getElementById(containerId);
     if (!container) return;
     if (!list || !list.projects) { showError(containerId); return; }
-    var projects = list.projects.slice();
+    /* 按日期倒序：新上传的项目自动排在最上面 */
+    var projects = list.projects.slice().sort(function (a, b) {
+      var da = a.date || "0000-00-00", db = b.date || "0000-00-00";
+      return db.localeCompare(da);
+    });
     if (limit) projects = projects.slice(0, limit);
     if (!projects.length) {
       container.innerHTML = '<p class="data-empty">' + t("empty_projects") + "</p>";
@@ -160,7 +172,7 @@
       return (
         '<div class="card project-card" data-id="' + p.id + '">' +
           '<div class="project-top">' +
-            '<span class="project-badge badge-indigo">' + (currentLang === "zh" ? p.status_zh : p.status_en) + "</span>" +
+            '<span class="project-badge ' + (p.status === "done" ? "badge-cyan" : "badge-indigo") + '">' + statusLabel(p) + "</span>" +
             "<h3>" + (currentLang === "zh" ? p.name_zh : p.name_en) + "</h3>" +
           "</div>" +
           "<p>" + (currentLang === "zh" ? p.desc_zh : p.desc_en) + "</p>" +
@@ -188,7 +200,7 @@
     var zh = currentLang === "zh";
     document.getElementById("modalTitle").innerHTML = zh ? proj.name_zh : proj.name_en;
     var statusEl = document.getElementById("modalStatus");
-    if (statusEl) statusEl.textContent = zh ? proj.status_zh : proj.status_en;
+    if (statusEl) statusEl.textContent = statusLabel(proj);
     var body = document.getElementById("modalBody");
     var detail = zh ? proj.detail_zh : proj.detail_en;
     body.innerHTML = detail.split("\n").map(function (line) {
@@ -252,7 +264,7 @@
     if (!file || !body) return;
     body.innerHTML = '<p class="data-empty">' + t("article_loading") + "</p>";
 
-    fetch(ROOT + file).then(function (r) {
+    fetch(file).then(function (r) {
       if (!r.ok) throw new Error("HTTP " + r.status);
       return r.text();
     }).then(function (md) {
