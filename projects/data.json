@@ -1,18 +1,6 @@
 {
   "projects": [
     {
-      "id": "moire-superlattice",
-      "date": "2025-02-10",
-      "status": "ongoing",
-      "name_zh": "摩尔超晶格计算",
-      "name_en": "Moiré Superlattice Calculations",
-      "desc_zh": "针对黑磷等四方晶格材料，计算 twisted bilayer 的能带结构，构建其连续模型以及紧束缚模型，探索可能存在的新奇性质与材料平台。",
-      "desc_en": "For square-lattice materials such as black phosphorus, compute the band structure of twisted bilayers and construct both continuum and tight-binding models, exploring potentially novel properties and material platforms.",
-      "detail_zh": "本项目围绕摩尔（moiré）超晶格体系展开。以黑磷等四方晶格材料为起点，研究小角度扭转双层中的能带重整化、平带形成与关联效应。\n\n主要工作：\n1. 基于 DFT（QE、Siesta）获取单层能带与 Wannier 轨道，构建紧束缚模型；\n2. 推导并验证小角近似下的连续模型（continuum model）；\n3. 分析摩尔平带的色散、拓扑性质及其对电子关联的影响，探索新的强关联平台。\n\n目前处于建模与数值验证阶段，相关学习笔记见博客。",
-      "detail_en": "This project focuses on moiré superlattice systems. Starting from square-lattice materials such as black phosphorus, we study band renormalization, flat bands, and correlation effects in twisted bilayers at small twist angles.\n\nMain tasks:\n1. Obtain monolayer band structures and Wannier orbitals from DFT (QE, Siesta) to build tight-binding models;\n2. Derive and validate the continuum model in the small-angle limit;\n3. Analyze the dispersion, topology, and correlation effects of moiré flat bands, exploring new strongly correlated platforms.\n\nThe project is currently in the modeling and numerics stage; related study notes are on the blog.",
-      "tags": ["QE, Siesta", "凝聚态计算", "tB模型"]
-    },
-    {
       "id": "nonhermitian-open-systems",
       "date": "2025-01-20",
       "status": "ongoing",
@@ -20,33 +8,21 @@
       "name_en": "Survey on Non-Hermitian and Open Quantum Systems",
       "desc_zh": "系统调研非布洛赫能带理论、例外点与 Lindblad 主方程，整理学习笔记并复现典型模型。",
       "desc_en": "Systematic survey of non-Bloch band theory, exceptional points, and the Lindblad master equation, with study notes and reproduction of representative models.",
-      "detail_zh": "加入课题组后的调研方向，覆盖非厄米物理与量子开放系统的核心概念与最新进展：\n\n- 例外点（EP）与谱奇异：参数空间中本征值-本征矢合并现象；\n- 非布洛赫能带理论与广义布里渊区（GBZ）：开边界下体-边对应的恢复；\n- 开放量子系统：Lindblad 主方程的推导、适用条件与数值求解；\n- 文献复现：用 Python 数值计算典型非厄米模型的能谱与波函数局域化。\n\n调研笔记整理在博客「非厄米物理学习笔记」系列中。",
-      "detail_en": "This is my research survey after joining the group, covering core concepts and recent advances in non-Hermitian physics and open quantum systems:\n\n- Exceptional points (EPs) and spectral singularities: coalescence of eigenvalues and eigenvectors in parameter space;\n- Non-Bloch band theory and the generalized Brillouin zone (GBZ): restoration of bulk-boundary correspondence under open boundaries;\n- Open quantum systems: derivation, validity, and numerical solution of the Lindblad master equation;\n- Literature reproduction: Python numerics of energy spectra and wave-function localization for representative non-Hermitian models.\n\nSurvey notes are collected in the blog series \"Notes on Non-Hermitian Physics\".",
-      "tags": ["非厄米物理", "量子开放系统", "Python"]
+      "detail_zh": "覆盖非厄米物理与量子开放系统的核心概念：\n\n- 例外点（EP）与谱奇异：参数空间中本征值-本征矢合并现象；\n- 非布洛赫能带理论与广义布里渊区（GBZ）：开边界下体-边对应的恢复；\n- 开放量子系统：Lindblad 主方程的推导、适用条件与数值求解。",
+      "detail_en": "Covering core concepts and recent advances in non-Hermitian physics and open quantum systems:\n\n- Exceptional points (EPs) and spectral singularities: coalescence of eigenvalues and eigenvectors in parameter space;\n- Non-Bloch band theory and the generalized Brillouin zone (GBZ): restoration of bulk-boundary correspondence under open boundaries;\n- Open quantum systems: derivation, validity, and numerical solution of the Lindblad master equation.",
+      "tags": ["非厄米物理", "量子开放系统"]
     },
     {
-      "id": "strong-correlation",
-      "date": "2024-12-10",
+      "id": "moire-superlattice",
+      "date": "2025-02-10",
       "status": "done",
-      "name_zh": "强关联体系的数值模拟",
-      "name_en": "Numerical Simulation of Strongly Correlated Systems",
-      "desc_zh": "使用精确对角化等方法研究小尺寸格点模型中的关联效应与量子相变。",
-      "desc_en": "Study correlation effects and quantum phase transitions in small lattice models using exact diagonalization and related methods.",
-      "detail_zh": "（示例项目，详情待补充）使用精确对角化（ED）研究 Hubbard 模型、t-J 模型等小尺寸格点体系，计算基态能量、纠缠熵与关联函数，观察金属-绝缘体转变等量子相变行为。",
-      "detail_en": "(Example project, details to be added) Use exact diagonalization (ED) to study small lattice systems such as the Hubbard and t-J models, computing ground-state energies, entanglement entropy, and correlation functions to probe quantum phase transitions such as the metal-insulator transition.",
-      "tags": ["Python", "量子多体", "精确对角化"]
-    },
-    {
-      "id": "ug-research",
-      "date": "2024-11-01",
-      "status": "done",
-      "name_zh": "本科生科研训练",
-      "name_en": "Undergraduate Research Training",
-      "desc_zh": "在导师指导下参与课题调研与文献复现，撰写调研报告。",
-      "desc_en": "Participate in literature survey and reproduction under faculty guidance, and write survey reports.",
-      "detail_zh": "（示例项目，详情待补充）在导师指导下完成指定课题的文献调研与核心结果复现，撰写中文调研报告并进行组会汇报。",
-      "detail_en": "(Example project, details to be added) Complete a literature survey and reproduce key results for a chosen topic under faculty guidance, then write a survey report and present at group meetings.",
-      "tags": ["文献调研", "报告"]
+      "name_zh": "摩尔超晶格计算",
+      "name_en": "Moiré Superlattice Calculations",
+      "desc_zh": "针对黑磷等四方晶格材料，计算 twisted bilayer 的能带结构，构建其连续模型以及紧束缚模型，探索可能存在的新奇性质与材料平台。",
+      "desc_en": "For square-lattice materials such as black phosphorus, compute the band structure of twisted bilayers and construct both continuum and tight-binding models, exploring potentially novel properties and material platforms.",
+      "detail_zh": "本项目围绕摩尔（moiré）超晶格体系展开。以黑磷等四方晶格材料为起点，研究小角度扭转双层中的能带重整化、平带形成与关联效应。\n\n主要工作：\n1. 基于 DFT（QE、Siesta）获取单层能带与 Wannier 轨道，构建紧束缚模型；\n2. 推导并验证小角近似下的连续模型（continuum model）；\n3. 分析摩尔平带的色散、拓扑性质及其对电子关联的影响，探索新的强关联平台。\n\n目前处于建模与数值验证阶段，相关学习笔记见博客。",
+      "detail_en": "This project focuses on moiré superlattice systems. Starting from square-lattice materials such as black phosphorus, we study band renormalization, flat bands, and correlation effects in twisted bilayers at small twist angles.\n\nMain tasks:\n1. Obtain monolayer band structures and Wannier orbitals from DFT (QE, Siesta) to build tight-binding models;\n2. Derive and validate the continuum model in the small-angle limit;\n3. Analyze the dispersion, topology, and correlation effects of moiré flat bands, exploring new strongly correlated platforms.\n\nThe project is currently in the modeling and numerics stage; related study notes are on the blog.",
+      "tags": ["QE, Siesta", "凝聚态计算", "tB模型"]
     }
   ]
 }
